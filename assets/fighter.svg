@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-labelledby="ftTitle">
+  <title id="ftTitle">A fighting-game demo: a green fighter punches a violet CPU fighter, which recoils, while health bars drain</title>
+  <style>
+    .parm{transform-box:fill-box;transform-origin:0% 0%;animation:punch 3.2s ease-in-out infinite}
+    .recoil{transform-box:fill-box;transform-origin:center;animation:recoil 3.2s ease-in-out infinite}
+    .spark{transform-box:fill-box;transform-origin:center;animation:spark 3.2s ease-out infinite}
+    .cpubar{transform-box:fill-box;transform-origin:left center;animation:drain 3.2s ease-out infinite}
+    .pbob{transform-box:fill-box;transform-origin:center;animation:bob 2s ease-in-out infinite}
+    @keyframes punch{0%,38%{transform:rotate(58deg)}46%{transform:rotate(-6deg)}54%{transform:rotate(-6deg)}62%,100%{transform:rotate(58deg)}}
+    @keyframes recoil{0%,44%{transform:translate(0,0) rotate(0)}50%{transform:translate(9px,0) rotate(4deg)}60%{transform:translate(6px,0) rotate(3deg)}72%,100%{transform:translate(0,0) rotate(0)}}
+    @keyframes spark{0%,44%{transform:scale(.3);opacity:0}50%{transform:scale(1.35);opacity:1}58%{transform:scale(.9);opacity:.3}64%,100%{transform:scale(.3);opacity:0}}
+    @keyframes drain{0%,44%{transform:scaleX(1)}50%{transform:scaleX(.84)}62%{transform:scaleX(.84)}80%,100%{transform:scaleX(1)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+    @media (prefers-reduced-motion: reduce){.parm,.recoil,.spark,.cpubar,.pbob{animation:none !important}}
+  </style>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1b3d"/><stop offset=".55" stop-color="#16213a"/><stop offset="1" stop-color="#0a121a"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2b3a"/><stop offset="1" stop-color="#0c151d"/>
+    </linearGradient>
+    <linearGradient id="pg" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="cg" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5b21b6"/><stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="200" fill="url(#sky)"/>
+  <g stroke="#a78bfa" stroke-opacity=".10" stroke-width="1">
+    <line x1="0" y1="52" x2="900" y2="52"/><line x1="0" y1="96" x2="900" y2="96"/><line x1="0" y1="140" x2="900" y2="140"/>
+    <line x1="150" y1="52" x2="80" y2="150"/><line x1="420" y1="52" x2="350" y2="150"/>
+    <line x1="690" y1="52" x2="620" y2="150"/><line x1="880" y1="52" x2="810" y2="150"/>
+  </g>
+  <rect x="0" y="150" width="900" height="50" fill="url(#floor)"/>
+  <line x1="0" y1="150" x2="900" y2="150" stroke="#a78bfa" stroke-opacity=".35" stroke-width="2"/>
+
+  <g>
+    <rect x="40" y="18" width="320" height="14" rx="4" fill="rgba(0,0,0,.45)"/>
+    <rect x="43" y="20" width="314" height="10" rx="3" fill="#34d399"/>
+    <rect x="540" y="18" width="320" height="14" rx="4" fill="rgba(0,0,0,.45)"/>
+    <g class="cpubar"><rect x="543" y="20" width="314" height="10" rx="3" fill="#a78bfa"/></g>
+    <text x="40" y="47" fill="#e6f4f1" font-family="monospace" font-size="12">YOU</text>
+    <text x="860" y="47" fill="#e6f4f1" font-family="monospace" font-size="12" text-anchor="end">CPU</text>
+  </g>
+
+  <g transform="translate(330,150)">
+    <g class="pbob">
+      <ellipse cx="0" cy="3" rx="22" ry="6" fill="#000" opacity=".25"/>
+      <line x1="-7" y1="-30" x2="-9" y2="0" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+      <line x1="7" y1="-30" x2="10" y2="0" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+      <line x1="-8" y1="-52" x2="-15" y2="-33" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-11" y="-57" width="22" height="29" rx="7" fill="url(#pg)"/>
+      <circle cx="0" cy="-64" r="8.5" fill="#34d399"/>
+      <circle cx="3" cy="-65" r="2" fill="#0f766e"/>
+      <g transform="translate(8,-52)"><g class="parm"><line x1="0" y1="0" x2="23" y2="3" stroke="#34d399" stroke-width="6" stroke-linecap="round"/></g></g>
+    </g>
+  </g>
+
+  <g transform="translate(570,150)">
+    <g class="recoil">
+      <g transform="scale(-1,1)">
+        <ellipse cx="0" cy="3" rx="22" ry="6" fill="#000" opacity=".25"/>
+        <line x1="-7" y1="-30" x2="-9" y2="0" stroke="#5b21b6" stroke-width="7" stroke-linecap="round"/>
+        <line x1="7" y1="-30" x2="10" y2="0" stroke="#5b21b6" stroke-width="7" stroke-linecap="round"/>
+        <line x1="-8" y1="-52" x2="-15" y2="-33" stroke="#5b21b6" stroke-width="6" stroke-linecap="round"/>
+        <rect x="-11" y="-57" width="22" height="29" rx="7" fill="url(#cg)"/>
+        <circle cx="0" cy="-64" r="8.5" fill="#a78bfa"/>
+        <circle cx="3" cy="-65" r="2" fill="#5b21b6"/>
+        <line x1="8" y1="-52" x2="15" y2="-34" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="spark" transform="translate(452,96)">
+    <g stroke="#fde047" stroke-width="2.4" stroke-linecap="round">
+      <line x1="0" y1="-14" x2="0" y2="-5"/><line x1="0" y1="5" x2="0" y2="14"/>
+      <line x1="-14" y1="0" x2="-5" y2="0"/><line x1="5" y1="0" x2="14" y2="0"/>
+      <line x1="-10" y1="-10" x2="-4" y2="-4"/><line x1="4" y1="4" x2="10" y2="10"/>
+      <line x1="10" y1="-10" x2="4" y2="-4"/><line x1="-4" y1="4" x2="-10" y2="10"/>
+    </g>
+  </g>
+</svg>
