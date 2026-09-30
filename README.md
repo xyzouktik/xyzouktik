@@ -7,10 +7,6 @@
 
 **BS-MS, Biological Sciences at IISER Kolkata.**
 
-![Profile views](https://komarev.com/ghpvc/?username=xyzouktik&label=Profile+views&color=0e7490&style=flat)
-
-Profile-view counting starts from the day this README was added.
-
 ## Academic interests
 
 I study biological sciences at IISER Kolkata, drawn to computational biology, protein structure, and machine learning for imaging. I build models that turn noisy experimental data into testable biological insight.
@@ -38,6 +34,14 @@ I study biological sciences at IISER Kolkata, drawn to computational biology, pr
 ![PDB](https://img.shields.io/badge/PDB-1f6feb?style=flat)
 ![UniProt](https://img.shields.io/badge/UniProt-0b5fff?style=flat)
 
+## Immune runner
+
+A bacterium sprints across a microscope slide, jumping the immune system. Ground: white blood cells and cytotoxic T cells. Air: T cells and antibodies. No keyboard, no lives — the slide just keeps scrolling.
+
+<p align="center">
+  <img src="assets/immune-runner.svg" alt="A bacterium runs along a slide and jumps over white blood cells, cytotoxic T cells and antibodies">
+</p>
+
 <p align="center">
   <img src="assets/divider.svg" alt="Neuron-style signal pulse travelling along an axon">
 </p>
@@ -47,3 +51,9 @@ I study biological sciences at IISER Kolkata, drawn to computational biology, pr
 - Email: ys22ms059@iiserkol.ac.in
 - LinkedIn: https://linkedin.com/in/youktik-sajjan
 - Portfolio: https://xyzouktik.github.io
+
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=xyzouktik.xyzouktik&left_color=0e7490&right_color=2dd4bf&left_text=Profile%20views" alt="Profile views">
+</p>
+
+Profile views counted since this README was added.
