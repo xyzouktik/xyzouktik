@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 260" width="900" height="260" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Youktik Sajjan — petri-dish field with drifting bacteria, dividing cocci and a DNA helix</title>
+  <style>
+    .cell{transform-box:fill-box;transform-origin:center}
+    .b1{animation:b1 14s ease-in-out infinite}
+    .b2{animation:b2 17s ease-in-out infinite}
+    .b3{animation:b3 12s ease-in-out infinite}
+    .b4{animation:b4 19s ease-in-out infinite}
+    .b5{animation:b5 15s ease-in-out infinite}
+    .b6{animation:b6 21s ease-in-out infinite}
+    .cocA{transform-box:fill-box;transform-origin:center;animation:cocA 12s ease-in-out infinite}
+    .cocB{transform-box:fill-box;transform-origin:center;animation:cocB 12s ease-in-out infinite}
+    .cocA2{transform-box:fill-box;transform-origin:center;animation:cocA 16s ease-in-out infinite}
+    .cocB2{transform-box:fill-box;transform-origin:center;animation:cocB 16s ease-in-out infinite}
+    .bok{animation:bob 11s ease-in-out infinite}
+    .helix{animation:scroll 30s linear infinite}
+    @keyframes b1{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(20px,-12px) rotate(14deg)}}
+    @keyframes b2{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-16px,10px) rotate(-12deg)}}
+    @keyframes b3{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(12px,14px) rotate(10deg)}}
+    @keyframes b4{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-22px,-8px) rotate(-16deg)}}
+    @keyframes b5{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(24px,6px) rotate(18deg)}}
+    @keyframes b6{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-14px,-14px) rotate(-8deg)}}
+    @keyframes cocA{0%,35%{transform:translate(0,0);opacity:1}72%{transform:translate(-9px,0);opacity:.85}100%{transform:translate(-13px,0);opacity:0}}
+    @keyframes cocB{0%,35%{transform:translate(0,0);opacity:1}72%{transform:translate(9px,0);opacity:.85}100%{transform:translate(13px,0);opacity:0}}
+    @keyframes bob{0%,100%{transform:translate(0,0);opacity:.3}50%{transform:translate(6px,-8px);opacity:.5}}
+    @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-900px)}}
+    @media (prefers-reduced-motion: reduce){.cell,.cocA,.cocB,.cocA2,.cocB2,.bok,.helix{animation:none !important}}
+  </style>
+  <defs>
+    <radialGradient id="bk"><stop offset="0" stop-color="#0d9488" stop-opacity=".3"/><stop offset="1" stop-color="#0d9488" stop-opacity="0"/></radialGradient>
+    <g id="hm">
+      <path d="M0,0 Q22.5,-8 45,0 Q67.5,8 90,0" fill="none" stroke="#0d9488" stroke-width="1.6" opacity=".6"/>
+      <path d="M0,0 Q22.5,8 45,0 Q67.5,-8 90,0" fill="none" stroke="#0d9488" stroke-width="1.6" opacity=".6"/>
+      <line x1="22.5" y1="-4" x2="22.5" y2="4" stroke="#14b8a6" stroke-width="1" opacity=".7"/>
+      <line x1="67.5" y1="4" x2="67.5" y2="-4" stroke="#14b8a6" stroke-width="1" opacity=".7"/>
+    </g>
+    <g id="ht">
+      <use xlink:href="#hm" href="#hm" x="0"/>
+      <use xlink:href="#hm" href="#hm" x="90"/>
+      <use xlink:href="#hm" href="#hm" x="180"/>
+      <use xlink:href="#hm" href="#hm" x="270"/>
+      <use xlink:href="#hm" href="#hm" x="360"/>
+      <use xlink:href="#hm" href="#hm" x="450"/>
+      <use xlink:href="#hm" href="#hm" x="540"/>
+      <use xlink:href="#hm" href="#hm" x="630"/>
+      <use xlink:href="#hm" href="#hm" x="720"/>
+      <use xlink:href="#hm" href="#hm" x="810"/>
+    </g>
+  </defs>
+  <rect width="900" height="260" fill="#f2f6f4"/>
+  <circle class="bok" cx="110" cy="70" r="26" fill="url(#bk)"/>
+  <circle class="bok" cx="300" cy="212" r="20" fill="url(#bk)"/>
+  <circle class="bok" cx="620" cy="58" r="30" fill="url(#bk)"/>
+  <circle class="bok" cx="822" cy="96" r="18" fill="url(#bk)"/>
+  <circle class="bok" cx="450" cy="236" r="24" fill="url(#bk)"/>
+  <circle class="bok" cx="196" cy="22" r="16" fill="url(#bk)"/>
+  <circle class="bok" cx="742" cy="222" r="22" fill="url(#bk)"/>
+  <rect class="cell b1" x="70" y="40" width="30" height="11" rx="5.5" fill="#0f766e" opacity=".85"/>
+  <rect class="cell b2" x="180" y="28" width="34" height="11" rx="5.5" fill="#047857" opacity=".8"/>
+  <rect class="cell b3" x="300" y="44" width="26" height="10" rx="5" fill="#0d9488" opacity=".85"/>
+  <rect class="cell b4" x="430" y="24" width="36" height="12" rx="6" fill="#0f766e" opacity=".75"/>
+  <rect class="cell b5" x="560" y="42" width="28" height="10" rx="5" fill="#115e59" opacity=".8"/>
+  <rect class="cell b6" x="680" y="30" width="32" height="11" rx="5.5" fill="#047857" opacity=".85"/>
+  <rect class="cell b1" x="800" y="58" width="26" height="10" rx="5" fill="#0d9488" opacity=".8"/>
+  <rect class="cell b2" x="96" y="118" width="30" height="11" rx="5.5" fill="#047857" opacity=".8"/>
+  <rect class="cell b3" x="118" y="182" width="28" height="10" rx="5" fill="#0f766e" opacity=".8"/>
+  <rect class="cell b4" x="250" y="206" width="34" height="11" rx="5.5" fill="#115e59" opacity=".75"/>
+  <rect class="cell b5" x="520" y="202" width="30" height="11" rx="5.5" fill="#0d9488" opacity=".85"/>
+  <rect class="cell b6" x="700" y="192" width="32" height="11" rx="5.5" fill="#0f766e" opacity=".8"/>
+  <rect class="cell b1" x="818" y="140" width="26" height="10" rx="5" fill="#047857" opacity=".8"/>
+  <rect class="cell b2" x="360" y="224" width="30" height="10" rx="5" fill="#115e59" opacity=".75"/>
+  <circle class="cocA" cx="160" cy="210" r="7" fill="#047857" opacity=".9"/>
+  <circle class="cocB" cx="160" cy="210" r="7" fill="#047857" opacity=".9"/>
+  <circle class="cocA2" cx="770" cy="200" r="6" fill="#0f766e" opacity=".85"/>
+  <circle class="cocB2" cx="770" cy="200" r="6" fill="#0f766e" opacity=".85"/>
+  <g transform="translate(0,235)"><g class="helix">
+    <use xlink:href="#ht" href="#ht"/>
+    <use xlink:href="#ht" href="#ht" x="900"/>
+  </g></g>
+  <rect x="205" y="86" width="490" height="88" rx="12" fill="#ffffff" opacity=".72"/>
+  <text x="450" y="124" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="40" font-weight="600" fill="#082f2a">Youktik Sajjan</text>
+  <text x="450" y="152" text-anchor="middle" font-family="monospace" font-size="13.5" letter-spacing="1.5" fill="#0f766e">Computational Biology x Machine Learning</text>
+</svg>

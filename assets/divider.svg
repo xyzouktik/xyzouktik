@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="900" height="60" role="img" aria-labelledby="dvTitle">
+  <title id="dvTitle">Neuron-style signal pulse travelling along an axon</title>
+  <style>
+    .pulse{animation:run 3.6s linear infinite}
+    @keyframes run{from{transform:translateX(-440px)}to{transform:translateX(440px)}}
+    @media (prefers-reduced-motion: reduce){.pulse{animation:none !important}}
+  </style>
+  <path d="M30,30 L10,18 M30,30 L10,42 M30,30 L14,30" stroke="#14b8a6" stroke-width="1.6" opacity=".4" fill="none" stroke-linecap="round"/>
+  <path d="M870,30 L890,18 M870,30 L890,42 M870,30 L886,30" stroke="#14b8a6" stroke-width="1.6" opacity=".4" fill="none" stroke-linecap="round"/>
+  <line x1="30" y1="30" x2="870" y2="30" stroke="#14b8a6" stroke-width="2" opacity=".4" stroke-linecap="round"/>
+  <g class="pulse">
+    <circle cx="450" cy="30" r="10" fill="#5eead4" opacity=".18"/>
+    <circle cx="450" cy="30" r="5" fill="#5eead4" opacity=".9"/>
+  </g>
+</svg>
