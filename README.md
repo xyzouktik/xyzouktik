@@ -36,7 +36,7 @@ I study biological sciences at IISER Kolkata, drawn to computational biology, pr
 
 ## Immune runner
 
-A bacterium sprints across a microscope slide, jumping the immune system. Ground: white blood cells and cytotoxic T cells. Air: T cells and antibodies. No keyboard, no lives — the slide just keeps scrolling.
+A bacterium sprints across a microscope slide, jumping the immune system. Ground: white blood cells and cytotoxic T cells. Air: T cells and antibodies. **Play it →** https://xyzouktik.github.io/game.html
 
 <p align="center">
   <img src="assets/immune-runner.svg" alt="A bacterium runs along a slide and jumps over white blood cells, cytotoxic T cells and antibodies">
